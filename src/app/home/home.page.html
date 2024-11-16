@@ -17,4 +17,25 @@
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
+  {{yeah}}
+  <ion-list>
+    <ion-item>
+      <ion-input label="Default input"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  <ion-button>кнопочка</ion-button>
+  <ion-input [(ngModel)] = "yeah"></ion-input> 
+  <ion-item *ngFor = "let letter of letters">
+    {{letter}}
+
+  </ion-item>
+  <ion-grid>
+    <b style = "display: flex; justify-content: center;">Интересное чтиво</b>
+    <ion-row *ngFor = "let book of books">
+      <ion-col offset="6" offset-md="4" offset-lg="2">{{book.a}}</ion-col>
+      <ion-col offset="6" offset-md="4" offset-lg="2">{{book.n}}</ion-col>
+      
+    </ion-row>
+  </ion-grid>
 </ion-content>
